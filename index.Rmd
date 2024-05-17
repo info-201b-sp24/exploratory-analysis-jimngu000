@@ -3,60 +3,96 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
-
-Give your project a concise, interesting title that summarizes the entirety of your project
+## Technological Impacts on Mental Health
 
 ### Authors
 
-Names of your team members
+Jimmy Nguyen (jimmydn@uw.edu)
 
 ### Date
 
-Winter 2022
+Spring 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+My main goal is to explore the effects of technology, such as social media, on mental health amongst the general population around the world. This domain and the questions that it entails are important because poor mental health is still something widely disregarded as a "priority" despite having such a vast impact on the lives of those who are affected and precipitating even greater issues down the road. To address this issue, I will examine how technology might positively and/or negatively impact one's mental health, as well as look into how it can influence mental health care/treatments.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+mental health; technology; social media; anxiety; depression; tech industry
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+The goal of this project is to explore how different forms of technology can have varying impacts on one’s mental health, as well as how it can also be used to treat underlying mental health issues or influence said treatments. Some of the questions I hope to answer while exploring this domain include:
+
+- How does social media usage negatively impact mental health across different age groups? Do the negatives outweigh any potential positives of social media for mental health?
+
+- Are workers in tech industries/positions more prone to mental health issues compared to other industries? Does this vary country-by-country?
+
+- Have recent technological advancements been helpful in regards to treating mental health? If so, how effective are they?
+
+These questions are motivated by a desire to understand the role of technology in addressing our everyday mental health, especially with its increasing prevalence in society over time. Answering these questions is important because it would give more insight as to how technology might have different impacts on mental health across different demographics, as well as ultimately guiding healthcare providers, researchers, and other individuals to promoting positive mental health and well-being.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+My topic is one that has been a focus of many research papers and related work in the recent years, especially due to the ever-increasing usage of technology in everyday life coinciding with a recent societal push towards mental health awareness. Certain forms of technology, such as social media, have developed a reputation for influencing mental health that has been studied in various research projects and papers. Social networking is vital to developing healthy mental states, but “the quantity and quality of social relationships [can] affect mental health, health behavior, physical health, and mortality risk” (Karim, 2020).
 
-### The Dataset
+Luckily, technology has also been observed as having “opened a new frontier in mental health care…giving the public, health care providers, and researchers new ways to access help, monitor progress, and increasing understanding of mental health” (“Technology and the Future of Mental Health Treatment”). This is significant, as technological treatments can range anywhere from simple (providing access to crisis text/call lines) to advanced (apps that can monitor behavioral statuses and signal for help when detecting changes). In advanced use cases, technology can be used to “[evaluate] nearly all features of psychiatric disorders, including symptoms, cognitive performance, and everyday functioning” (Harvey, 2022).
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+##### Works Cited
+Harvey, Philip D., et al. “Technology and mental health: State of the art for assessment and treatment.” American Journal of Psychiatry, vol. 179, no. 12, 1 Dec. 2022, pp. 897–914, https://doi.org/10.1176/appi.ajp.21121254.
+    
+Karim, Fazida, et al. “Social Media Use and Its Connection to Mental Health: A Systematic Review.” Cureus, U.S. National Library of Medicine, 15 June 2020, www.ncbi.nlm.nih.gov/pmc/articles/PMC7364393/.
+
+“Technology and the Future of Mental Health Treatment.” National Institute of Mental Health, U.S. Department of Health and Human Services, www.nimh.nih.gov/health/topics/technology-and-the-future-of-mental-health-treatment. Accessed 15 May 2024.
+
+### The Datasets
+
+[My first dataset](https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health/data) is from a 2023 survey conducted as part of a data science and machine learning project for a statistics course. The survey was conducted by university students in Dhaka, Bangladesh, and collected data regarding participants' mental health state and experience with social media.
+
+The dataset has 20 features (21 including a timestamp) and 481 observations.
+
+Some ethical questions that need to be considered when working with a dataset like this include:
+
+- Was the survey conducted in a way that avoids bias in order to accurately capture how technology might affect the participants’ everyday life?
+
+- Were there any groups that might have been underrepresented in the survey, and how would this affect the overall interpretation of the data?
+
+- What are some different ways that this data can be utilized after its collection, and how can it be ensured that this data is used responsibly?
+
+One possible limitation with this dataset would be the location in which the survey was conducted. Since it only involved participants in Dhaka, Bangladesh, it only gives insight into the specific mental health/technology intersectionality of that one country as opposed to a broader view. Another possible limitation with the dataset might be underrepresentation; since the survey was conducted by college students for a course, it’s possible that other college-student participants make up a majority of the data, which means other demographics (graduates, industry workers) might be underrepresented.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+By exploring social media’s impact across different age groups, I hope to see whether certain groups are more prone to the influence of social media, which could possibly be communicated to app designers in order to address this increased influence (changing the design of certain features or apps to ensure groups that are more prone to negative social influence have resources available to them).
+
+By considering this alongside researching how workers in the tech industry might be affected by mental health, both technologists and designers can be informed of ways to promote positive mental health in both the field and in the products that are created in the field.
+
+Finally, by looking into how technology might actually be beneficial in certain cases regarding mental health treatment, policymakers can create well-informed decisions about responsible technology usage and produce guidelines for apps and other forms of technology that ensure the prioritization of user well-being.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+There are a couple of challenges that I would need to address with the initial project idea. For example, one challenge I might face is making sure the datasets used have accurate and reliable data. Each dataset may have some form of over/underrepresentation due to the nuances of the data collection method and where the data was collected, but it is my responsibility to be aware of any potential biases, as well as to ensure that the data used is actually reliable.
+
+Also, another general challenge would be using the chosen datasets to gather meaningful conclusions and answers to the research questions. How technology might impact the mental state of individuals in the general population might not have a simple and/or direct answer given the complicated relationship between the two (and the prevalence of technology in modern society), and I would ultimately need to be able to navigate these complexities in order to draw reasonable and meaningful interpretations from the datasets.
 
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+social media data
+-lowest age
+-highest age
+-num observations
+-female ratio 
+-male ratio
+
 ### Table
 
 Include a table of aggregate information
+
+```{r, echo = FALSE, code = readLines("table.R")}
+```
 
 Describe why you included the table and what information it reveals
 
@@ -68,14 +104,21 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
+pie chart
+
+how often does mental health affect u in workplace
+
+
 
 ### Chart 2
 
 Include a chart
 
 Describe why you chose this chart and what information it reveals
+
+scatter plot 
+
+age to social media usage(?)
 
 ### Chart 3
 
