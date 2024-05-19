@@ -128,6 +128,5 @@ This scatterplot seeks to display the relationship between a respondent's age an
 
 ### Chart 3
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart3.R")}
+```
