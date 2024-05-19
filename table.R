@@ -2,7 +2,7 @@ library(tidyverse)
 library(dplyr)
 library(knitr)
 
-industry <- read.csv("https://github.com/info-201b-sp24/exploratory-analysis-jimngu000/blob/main/survey.csv")
+industry <- read.csv("C:/Users/wildm/info201/datasets/techindustry/survey.csv")
 
 table <- industry %>%
   group_by(Country) %>%

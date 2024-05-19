@@ -1,7 +1,7 @@
 library(tidyverse)
 library(dplyr)
 
-social_media_mental <- read.csv("https://github.com/info-201b-sp24/exploratory-analysis-jimngu000/blob/main/smmh.csv")
+social_media_mental <- read.csv("C:/Users/wildm/info201/datasets/socialmedia/smmh.csv")
 
 summary_info <- list()
 
