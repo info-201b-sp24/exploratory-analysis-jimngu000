@@ -10,10 +10,13 @@ table <- industry %>%
     total = n(),
     count_yes_bene = sum(benefits == "Yes"),
     ratio_bene = count_yes_bene / total,
-    count_yes_know = sum(care_options == "Yes"),
-    ratio_know = count_yes_know / total
+    count_yes_mental = sum(mental_vs_physical == "Yes"),
+    ratio_mental = count_yes_mental / total
   ) %>%
-  select(Country, total, ratio_bene, ratio_know)
+  select(Country, total, ratio_bene, ratio_mental)
 
 kable(table,
-      col.names = c("Country", "Number of Responses", "Ratio of Employers Providing Mental Health Benefits", "Ratio of Knowing Care Options Provided by Employers"))
+      col.names = c("Country", "Number of Responses", 
+                    "% of Employers Providing Mental Health Benefits",
+                    "% of Employees Believing Employers Treat Mental And Physical Health Equally"),
+      digits = 3)

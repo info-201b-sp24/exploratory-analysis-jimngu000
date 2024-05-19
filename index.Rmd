@@ -62,6 +62,20 @@ Some ethical questions that need to be considered when working with a dataset li
 
 One possible limitation with this dataset would be the location in which the survey was conducted. Since it only involved participants in Dhaka, Bangladesh, it only gives insight into the specific mental health/technology intersectionality of that one country as opposed to a broader view. Another possible limitation with the dataset might be underrepresentation; since the survey was conducted by college students for a course, it’s possible that other college-student participants make up a majority of the data, which means other demographics (graduates, industry workers) might be underrepresented.
 
+[A second dataset I have](https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey?resource=download) is from a survey conducted in 2014 that measures different attitudes towards mental health from employees in the tech industry. 
+
+The dataset contains 26 features (27 including a timestamp) and 1259 observations.
+
+Some ethical questions that need to be considered when working with a dataset like this include:
+
+- Are there any potential risks to employees participating in the survey (i.e., potential negative consequences for employees who respond negatively/express negative feelings about mental health)?
+
+- Were there certain groups of employees that may have been under/overrepresented in the dataset (different skill levels/positions)?
+
+- Were any cultural sensitivities taken into account when collecting the data that may have directly influenced any of the responses?
+
+One possible limitation with this dataset may be the accuracy with which the responses accurately portray opinions on mental health in the modern-day tech field, as the data collected was from 2014.
+
 ### Implications
 
 By exploring social media’s impact across different age groups, I hope to see whether certain groups are more prone to the influence of social media, which could possibly be communicated to app designers in order to address this increased influence (changing the design of certain features or apps to ensure groups that are more prone to negative social influence have resources available to them).
@@ -78,47 +92,39 @@ Also, another general challenge would be using the chosen datasets to gather mea
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-social media data
--lowest age
--highest age
--num observations
--female ratio 
--male ratio
-
-### Table
-
-Include a table of aggregate information
-
-```{r, echo = FALSE, code = readLines("table.R")}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("summary_script.R")}
 ```
 
-Describe why you included the table and what information it reveals
+My analysis of my initial dataset, the survey pertaining to respondents' mental states and attitudes towards social media revealed a variety of surprising statistics. For example, there was an extensive range in terms of the ages of the respondents; **the lowest age in the dataset was `r summary_info["lowest_age"]`**, while **the highest age in the dataset was `r summary_info["highest_age"]`**.
 
-### Chart 1
+Additionally, the most common group of social media apps used by the respondents was: **`r summary_info["most_common_media"]`.** The most common level of social media usage by the respondents was **`r summary_info["common_usage"]`** per day.
 
-Include a chart
+Notably, within the dataset, certain groups of respondents were more prone to depression or negative mental health states than others. One of the variables in the dataset recorded how often a respondent felt depressed or "down" on a scale of 1 to 5 (5 being very often). Out of all the occupations of respondents in the survey, **University Students** were most likely to be affected by depressive or negative mental states, with a ratio of **0.2671** of University Student respondents selecting 5 as their answer to this variable.
 
-Describe why you chose this chart and what information it reveals
+### Table: Tech Industry Mental Health Awareness By Country (2014)
 
-Here's an example of how to run an R script inside an RMarkdown file:
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("table.R")}
+```
 
-pie chart
+This table showcases survey responses grouped by country, and provides two ratios: the percentage of employees from each country that are aware of their employers providing mental health benefits, and the percentage of employees from each country that believe their employers treat mental and physical health equally in the workplace.
 
-how often does mental health affect u in workplace
+Some notable observations can be made from the table: the United States had the greatest number of employee responses, but only roughly half of the responses were aware that their employer's faciliated mental health benefits/programs. Additionally, only around 26% of these employees believed their employer's actually treat mental and physical health equally.
 
+This can be compared to some place like the Netherlands, where only around 15% of employee responses knew about their employer's mental health programs, yet over half of the responses believed their employer's treated mental and physical health the same.
 
+### Chart 1: Company Mental Health Benefits Per Company Size
 
-### Chart 2
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart1.R")}
+```
 
-Include a chart
+This chart expresses the number of companies that provide mental health benefits, such as therapy or other resources for relieving mental health, across different company sizes. The x-axis shows different company sizes that were options in the survey given to the respondents, while the y-axis expresses the number of companies that do provide mental health benefits per company size, according to the respondents' answers. I wanted to use this graph to see if there were any trends in regards to mental health accessibility being tied to the size of a company. Surely enough, there were significantly less respondent's from small companies (1-5) that responded "Yes" to their employers providing mental health benefits compared to larger companies (more than 1000 employees).
 
-Describe why you chose this chart and what information it reveals
+### Chart 2: Age and Social Media Comparisons
 
-scatter plot 
+```{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("chart2.R")}
+```
 
-age to social media usage(?)
+This scatterplot seeks to display the relationship between a respondent's age and the frequency in which they compare themselves to others via social media (1 being not often, 5 being very often). I wanted to utilize this plot to see if certain ages were less prone to social media comparisons and using social media for "validation". Surprisingly, there was a relatively even spread of responses across all ages; those around 25 were had answers ranging from 1 to 5, while those around and above 50 mostly answered either 1 or 3, with a few exceptions.
 
 ### Chart 3
 
